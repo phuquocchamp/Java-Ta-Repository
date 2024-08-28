@@ -3,7 +3,6 @@ package Exercise_46;
 public class Cat extends Mammal {
     public Cat (String name){
         super(name);
-
     }
 
     public void greets (){

@@ -1,6 +1,7 @@
 package Exercise_46;
 import java.util.Scanner;
 public class Application {
+
     public static void main(String[] args) {
 
         int choice;
@@ -10,6 +11,7 @@ public class Application {
             System.out.println("Menu show greets of animal:");
             System.out.println("1. Cat.");
             System.out.println("2. Dog.");
+            System.out.println("Other number to exit.");
             System.out.print("Choose: ");
             choice = Integer.parseInt(sc.nextLine());
             switch (choice){
@@ -28,25 +30,22 @@ public class Application {
                         System.out.println("Type of dog:");
                         System.out.println("1. Dog A");
                         System.out.println("2. Dog B");
+                        System.out.println("Other number to exit.");
                         System.out.print("Choose : ");
                         int typeOfDog = Integer.parseInt(sc.nextLine());
+                        System.out.print("Name: ");
+                        String name = sc.nextLine();
                         switch (typeOfDog){
                             case 1:{
-                                System.out.print("Name: ");
-                                String name = sc.nextLine();
                                 Dog a = new Dog (name);
                                 System.out.println(a);
                                 a.greets();
-                                System.out.println("\n\n");
                                 break;
                             }
                             case 2:{
-                                System.out.print("Name: ");
-                                String name = sc.nextLine();
-                                Dog b = new Dog (name);
-                                System.out.println(b);
-                                b.greets(new Dog("Another Dog"));
-                                System.out.println("\n\n");
+                                Dog a = new Dog (name);
+                                System.out.println(a);
+                                a.greets(new Dog("Another Dog"));
                                 break;
                             }
                             default:{
@@ -54,14 +53,12 @@ public class Application {
                                 break;
                             }
                         }
+                        System.out.println("\n\n");
                     }
-
                 }
-
                 default:{
                     check = false;
                     break;
-
                 }
             }
         }
