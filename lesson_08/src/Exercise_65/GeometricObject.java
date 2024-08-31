@@ -1,4 +1,4 @@
-package Exersice_65;
+package Exercise_65;
 
 public interface GeometricObject {
 
