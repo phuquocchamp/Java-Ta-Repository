@@ -8,15 +8,6 @@ public class ResizableCircle extends Circle implements Resizable {
         super(radius);
     }
     DecimalFormat decimalFormat = new DecimalFormat( "#.##" );
-    @Override
-    public double getPerimeter() {
-        return super.getPerimeter();
-    }
-
-    @Override
-    public double getArea() {
-        return super.getArea();
-    }
 
     @Override
     public String toString() {

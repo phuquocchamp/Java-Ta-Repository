@@ -7,7 +7,8 @@ public class TestAnimal {
         System.out.println("Tye of dog");
         System.out.println("1. Dog A");
         System.out.println("2. Dog B");
-        System.out.print("Enter your choice: ");
+        System.out.print("Enter your choice: " +
+                "");
         int type = Integer.parseInt(sc.nextLine());
         switch (choice) {
             case 1: {
